@@ -1,11 +1,16 @@
-var log = 2833839448;
-var pass = loh3320344;
+﻿var correct = false;
 
-var LogInput = +prompt("Введите логин")
-var passInput = +prompt("Введите пароль")
+var log = '2833839448';
+var pass = 'loh3320344';
 
-alert(LogInput);
-alert(passInput);
-while (LogInput = log , passInput = pass) {
-    alert("Выполнен вход")
+while (!correct) {
+    var LogInput = prompt("Введите логин");
+    var passInput = prompt("Введите пароль");
+
+    if (LogInput == log && passInput == pass) {
+      correct = true;
+      alert("Выполнен вход");
+    } else {
+      alert("Неверные данные для входа");
+    }
 }
